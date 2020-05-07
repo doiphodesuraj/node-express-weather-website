@@ -29,7 +29,7 @@ app.get('/about', (req, res) => {
 
 app.get('/help', (req, res) => {
     res.render('help', {
-        helpText: 'For more help call me',
+        helpText: 'For more help dont call me',
         title: 'Help',
         name: 'Suraj Doiphode'
     })
@@ -66,7 +66,8 @@ app.get('/weather', (req, res) => {
 
 app.get('*', (req, res) => {
     res.render('404', {
-        name: 'Suraj Doiphode'
+        name: 'Suraj Doiphode',
+        errorMessage: "404...!!!"
     })
 })
 app.listen(port, () => {
