@@ -12,7 +12,7 @@ weatherForm.addEventListener('submit', (e) => {
                 msg_1.textContent = resp.error;
             } else {
                 msg_1.textContent = resp.location;
-                msg_2.textContent = resp.forecast + ' Current time is ' + resp.time;
+                msg_2.textContent = resp.forecast + ' Current time is ' + resp.time + '. Humidity is ' + resp.humidity +'.';
             }
         })
     });

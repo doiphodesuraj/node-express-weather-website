@@ -58,7 +58,8 @@ app.get('/weather', (req, res) => {
                 rain: resp.current.precip,
                 location: location,
                 address: req.query.address,
-                time: resp.location.localtime
+                time: resp.location.localtime,
+                humidity: resp.current.humidity
             })
         })
     });
